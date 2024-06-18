@@ -1,8 +1,7 @@
 @using System.Net.Http.Json
 @using MyPortfolio.Models
-@inject HttpClient Http
 
-<div id="contact" style="background-color: #4E567E;">
+<div id="contact" style="background-color: @BackgroundColor;">
     @if (property is null)
     {
         <div style="display: flex; justify-content: center; gap: 2.5rem;">
@@ -38,7 +37,13 @@
 @code {
     private SiteProperties? property;
     private SocialIcons? icons;
-    
+
+    [Parameter, EditorRequired]
+    public HttpClient? Http { get; set; } = default!;
+
+    [Parameter, EditorRequired]
+    public string? BackgroundColor { get; set; } = default!;
+
     protected override async Task OnInitializedAsync()
     {
         property = await Http.GetFromJsonAsync<SiteProperties>("sample-data/siteproperties.json");

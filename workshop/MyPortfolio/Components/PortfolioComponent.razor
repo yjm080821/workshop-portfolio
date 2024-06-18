@@ -1,6 +1,5 @@
 @using System.Net.Http.Json
 @using MyPortfolio.Models
-@inject HttpClient Http
 
 <section class="light" id="portfolio">
     <h2>Portfolio</h2>
@@ -36,11 +35,15 @@
     private List<Project>? projects;
     private HeroImage? heroPortfolio;
     
+    [Parameter, EditorRequired]
+    public HttpClient? Http { get; set; } = default!;
+
+    [Parameter, EditorRequired]
+    public List<HeroImage> HeroImages { get; set; } = default!;
+
     protected override async Task OnInitializedAsync()
     {
         projects = await Http.GetFromJsonAsync<List<Project>>("sample-data/projects.json");
-
-        var heros = await Http.GetFromJsonAsync<List<HeroImage>>("sample-data/heroimages.json");
-        heroPortfolio = heros.SingleOrDefault(h => h.Name == "portfolio");
+        heroPortfolio = HeroImages.SingleOrDefault(h => h.Name == "portfolio");
     }
 }

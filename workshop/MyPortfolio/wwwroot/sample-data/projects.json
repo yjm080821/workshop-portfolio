@@ -1,22 +1,22 @@
 [
-    {
-      "title": "경북소프트웨어고",
-      "description": "내가 다니는 학교",
-      "url": "https://school.gyo6.net/gbsw/main.do?sysId=gbsw"
-    },
-    {
-      "title": "젖소 나무위키",
-      "description": "나의 관해 적힌곳",
-      "url": "https://namu.wiki/w/%EC%A0%96%EC%86%8C"
-    },
-    {
-      "title": "젖소개량사업소",
-      "description": "내 후손 만드는 곳",
-      "url": "http://dcic.co.kr/index.do"
-    },
-    {
-      "title": "젖소 연구보고서",
-      "description": "내 사생활인데 고소한다",
-      "url": "https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202100009579"
-    }
-  ]
+  {
+    "title": "10 Things To Know About Azure Static Web Apps 🎉",
+    "description": "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
+    "url": "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i"
+  },
+  {
+    "title": "Web Development for Beginners",
+    "description": "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
+    "url": "https://github.com/microsoft/web-dev-for-beginners"
+  },
+  {
+    "title": "My Resume Site",
+    "description": "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
+    "url": "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website"
+  },
+  {
+    "title": "GitHub Codespaces and github.dev",
+    "description": "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
+    "url": "https://www.youtube.com/watch?v=c3hHhRME_XI"
+  }
+]
